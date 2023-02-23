@@ -1,0 +1,89 @@
+.container-fluid{
+    /* Take full size */
+  height: 150vh;
+  width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  /* Background */
+  background: url('https://img.freepik.com/premium-photo/3d-rendering-online-gambling_99433-4597.jpg?w=2000') center;
+}
+
+.content-img{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+
+.main-img{
+    position: absolute;
+    top: 15%;
+    left: 30%;
+}
+
+.logo-img{
+    position: absolute;
+    top: 50%;
+    left: 70%;
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+}
+
+.web{
+    display: block;
+}
+
+.mobile-img{
+    position: absolute;
+}
+
+.mobile{
+    display: none;
+}
+
+.flash-button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    animation: flash 1s infinite;
+  }
+
+  .flash-button:hover {
+    animation-play-state: paused;
+  }
+  
+  @keyframes flash {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+
+
+@media screen and (max-width: 1200px) {
+    .web{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    .mobile-img-3{
+        margin: 0 auto;
+        position: absolute;
+        top: 15%;
+    }
+    
+}
+
